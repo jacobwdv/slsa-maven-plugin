@@ -67,5 +67,5 @@ See [slsa_provenance.json](slsa_provenance.json) for an example output.
 This example was run using https://github.com/ayoho/sample-app with the command:
 
 ```
-$ mvn clean package com.ibm.websphere.appserver.features:slsa-maven-plugin:1.1-SNAPSHOT:generate-provenance -DbuilderId="https://example.com/builder_id" -DbuildType="https://example.com/build_type"
+$ mvn clean package com.ibm.websphere.appserver.features:slsa-maven-plugin:1.0:generate-provenance -DbuilderId="https://example.com/builder_id" -DbuildType="https://example.com/build_type"
 ```
