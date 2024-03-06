@@ -1,0 +1,97 @@
+{
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [
+        {
+            "name": "sample-app.war",
+            "digest": {
+                "sha256": "f394b637eeb729346f6d203bc367c6d36a74af1d3e1d84ebdc758224e7548616"
+            }
+        }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {
+        "buildDefinition": {
+            "buildType": "https://example.com/build_type",
+            "externalParameters": {
+                "repository": "git@github.com:ayoho/sample-app.git",
+                "ref": "refs/heads/main",
+                "userProperties": {
+                    "builderId": "https://example.com/builder_id",
+                    "buildType": "https://example.com/build_type"
+                }
+            },
+            "resolvedDependencies": [
+                {
+                    "uri": "git+https://github.com/ayoho/sample-app@refs/heads/main",
+                    "digest": {
+                        "gitCommit": "549ec9c0333446e0d31d1c8103d822867c65ce01"
+                    }
+                },
+                {
+                    "name": "org.eclipse.microprofile:microprofile:4.0.1",
+                    "uri": "https://central.sonatype.com/artifact/org.eclipse.microprofile/microprofile/4.0.1",
+                    "annotations": {
+                        "type": "pom",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "jakarta.platform:jakarta.jakartaee-api:8.0.0",
+                    "uri": "https://central.sonatype.com/artifact/jakarta.platform/jakarta.jakartaee-api/8.0.0",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.basics:1.4.60",
+                    "uri": "https://central.sonatype.com/artifact/com.ibm.websphere.appserver.api/com.ibm.websphere.appserver.api.basics/1.4.60",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "org.apache.derby:derby:10.15.2.0",
+                    "uri": "https://central.sonatype.com/artifact/org.apache.derby/derby/10.15.2.0",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "org.apache.derby:derbytools:10.15.2.0",
+                    "uri": "https://central.sonatype.com/artifact/org.apache.derby/derbytools/10.15.2.0",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "org.apache.derby:derbyshared:10.15.2.0",
+                    "uri": "https://central.sonatype.com/artifact/org.apache.derby/derbyshared/10.15.2.0",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                },
+                {
+                    "name": "com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.jwt:1.1.62",
+                    "uri": "https://central.sonatype.com/artifact/com.ibm.websphere.appserver.api/com.ibm.websphere.appserver.api.jwt/1.1.62",
+                    "annotations": {
+                        "type": "jar",
+                        "scope": "provided"
+                    }
+                }
+            ]
+        },
+        "runDetails": {
+            "builder": {
+                "id": "https://example.com/builder_id"
+            },
+            "metadata": {
+                "startedOn": "2024-02-29T20:00:38.400Z"
+            }
+        }
+    }
+}
