@@ -5,7 +5,7 @@ This page describes a build type as outlined and recommended by https://slsa.dev
 ## Description
 
 ```jsonc
-"buildType" : "https://github.com/ayoho/slsa-maven-plugin/tree/main/v0.1"
+"buildType" : "https://github.com/ayoho/slsa-maven-plugin/tree/main/v1.0"
 ```
 
 This document describes the build type for the SLSA Maven Plugin. The plugin generates a SLSA Provenance file based on a Maven project using Git.
@@ -67,5 +67,5 @@ See [slsa_provenance.json](slsa_provenance.json) for an example output.
 This example was run using https://github.com/ayoho/sample-app with the command:
 
 ```
-$ mvn clean package com.ibm.websphere.appserver.features:slsa-maven-plugin:1.1-SNAPSHOT:generate-provenance -DbuilderId="https://example.com/builder_id" -DbuildType="https://example.com/build_type"
+$ mvn clean package com.ibm.websphere.appserver.features:slsa-maven-plugin:1.0:generate-provenance -DbuilderId="https://example.com/builder_id" -DbuildType="https://example.com/build_type"
 ```

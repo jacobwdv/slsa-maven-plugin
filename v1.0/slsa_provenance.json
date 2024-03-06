@@ -4,7 +4,7 @@
         {
             "name": "sample-app.war",
             "digest": {
-                "sha256": "f394b637eeb729346f6d203bc367c6d36a74af1d3e1d84ebdc758224e7548616"
+                "sha256": "96b761d48925a72cd7aeb5f54e08ad02857a15b8d7a691c3b585de019a9f8413"
             }
         }
     ],
@@ -90,7 +90,7 @@
                 "id": "https://example.com/builder_id"
             },
             "metadata": {
-                "startedOn": "2024-02-29T20:00:38.400Z"
+                "startedOn": "2024-03-06T20:23:20.696Z"
             }
         }
     }

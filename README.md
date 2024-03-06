@@ -26,7 +26,7 @@ Add the following to the pom.xml for the existing project:
             <plugin>
                 <groupId>com.ibm.websphere.appserver.features</groupId>
                 <artifactId>slsa-maven-plugin</artifactId>
-                <version>1.1-SNAPSHOT</version>
+                <version>1.0</version>
             </plugin>
         </plugins>
     </pluginManagement>
@@ -34,7 +34,7 @@ Add the following to the pom.xml for the existing project:
         <plugin>
             <groupId>com.ibm.websphere.appserver.features</groupId>
             <artifactId>slsa-maven-plugin</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>1.0</version>
             <executions>
                 <execution>
                     <phase>package</phase>
