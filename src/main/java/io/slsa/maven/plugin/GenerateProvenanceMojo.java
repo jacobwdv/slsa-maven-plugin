@@ -99,7 +99,7 @@ public class GenerateProvenanceMojo extends AbstractMojo {
         new File(provenanceFilePath).mkdirs();
         File newFile = new File(provenanceFilePath + File.separator + provenanceFileName);
         try {
-            FileWriter writer = new FileWriter(newFile, Charset.forName("UTF-8"));
+            FileWriter writer = new FileWriter(newFile);
             newFile.createNewFile();
             writer.write(getFileContents().toString());
             writer.close();
